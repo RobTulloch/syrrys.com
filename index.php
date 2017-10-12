@@ -1,36 +1,93 @@
+<!DOCTYPE html>
 <html>
-<head profile="http://gmpg.org/xfn/11">
-<title>Syrrys.com</title>
-<?php include_once("analyticstracking.php"); ?>
-</head>
-<body>
-	
-	<h1>Syrrys.com</h1>
-	<p><del>I'm (still) in the middle of reorganizing, excuse the mess.</del>
-	That's become slightly redundant.
-	<p>Welcome to an index of a few of my projects. Hopefully you can find what you're looking for or at least something.
-	<p>
-	My resume is available at <a href="http://robtulloch.com">RobTulloch.com</a> <!-- Please hire me -->
-	<p> My .Plan file </p>
-<object data=".plan" 
-	type='application/txt'>
-<!--	iframe html (fall back case) -->
-	<iframe src=".plan" 
-			style="border: none;">
-<!-- embed html (last chance) -->
-			<embed src=".plan" type='application/txt'></embed> 
-	</iframe>
-</object>
+	<head profile="http://gmpg.org/xfn/11">
+		<?php include_once("analyticstracking.php"); ?>
+		<meta charset="utf-8">
+		<title>Syrrys.com</title>
+		<style>
+			h1 {
+				color: rgb(0, 0, 0);
+			}
+			body {
+				margin: 40px;
+				background-color: rgb(255, 255, 255);
+			}
+			.wrapper {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 10px;
+				background-color: #fff;
+				color: #444;
+			}
+			.text {
+				background-color: #999;
+				grid-column-start: 1;
+				grid-column-end: 3;
+				color: #fff;
+				border-radius: 5px;
+				padding: 20px;
+				font-size: 100%;
+			}
+			.box {
+				background-color: #999;
+				columns: 1fr;
+				color: #fff;
+				border-radius: 5px;
+				padding: 20px;
+				font-size: 100%;
+			}
 
+		</style>
+	</head>
+	<body>
+	<div class="wrapper">
+		<div class="text title">
+			<h1>Syrrys.com the Personal Website of Rob Tulloch</h1>
+		</div>
 
-<ul>
-<li><a href="http://alice.syrrys.com/INDEX.php">Alice (circa 1997)</a></li>
-<li><a href="http://test.syrrys.com/">Testing?</a></li>
-<li><a href="http://intelligentdecline.com/">Intelligent Decline blog</a>
-<li><a href="http://blog.syrrys.com" rel="me">My Wordpress Blog (This could use some attention)</a>
-<li><a href="http://exceptionallyclassy.com/">Exceptionally Classy (Clothing... soon)</a>
-<li><a href="http://integral-designs.net/">Integral Designs (uses flash... aparently)</a>
+		<div class="text intro">
+			<p><del>I'm (still) in the middle of reorganizing, excuse the mess.</del>
+			That's become slightly redundant.
+			<p>Welcome to an index of a few of my projects. Hopefully you can find what you're looking for or at least something.
+		</div>
 
-</ul>
-<foot><a href="http://gmpg.org/xfn">  <img src="xfn-btn.gif" alt="XFN Friendly" /> </a></foot>
-</body></html>
+		<div class="text resume">
+			My resume is available at <a href="http://robtulloch.com">RobTulloch.com</a> <!-- Please hire me -->
+		</div>
+
+		<div class="box plan">
+			<h2> My .Plan file </h2>
+			<object data=".plan"
+				type='application/txt'>
+			<!--	iframe html (fall back case) -->
+				<iframe src=".plan"
+						style="border: none;">
+			<!-- embed html (last chance) -->
+						<embed src=".plan" type='application/txt'></embed>
+				</iframe>
+			</object>
+		</div>
+
+		<div class="box list">
+			<h2>My Other Sites</h2>
+			<ul>
+			<li><a href="http://alice.syrrys.com/INDEX.php">Alice (circa 1997)</a></li>
+			<li><a href="http://test.syrrys.com/">Testing?</a></li>
+			<li><a href="http://intelligentdecline.com/">Intelligent Decline blog</a>
+			<li><a href="http://blog.syrrys.com" rel="me">My Wordpress Blog (This could use some attention)</a>
+			<li><a href="http://exceptionallyclassy.com/">Exceptionally Classy (Clothing... soon)</a>
+			<li><a href="http://integral-designs.net/">Integral Designs (uses flash... aparently)</a>
+
+			</ul>
+		</div>
+
+		<foot>
+			<a href="http://gmpg.org/xfn">  <img src="xfn-btn.gif" alt="XFN Friendly" /> </a>
+			<br>This page has been hand coded by me, based on various examples and tutorials
+			along with my cutting edge (1992-1997) personal experience. <br><small>I have dispensed
+			with the <code>blink</code> tags that used to be de riguer. You're welcome.</small>
+
+		</foot>
+	</body>
+	<footer>This site uses cookies for Google Analytics tracking.</footer>
+</html>
