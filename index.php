@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
-	<head profile="http://gmpg.org/xfn/11">
+	<head>
 		<?php include_once("analyticstracking.php"); ?>
+		<link rel="profile" href="http://gmpg.org/xfn/11" />
 		<meta charset="utf-8">
 		<title>Syrrys.com</title>
 		<style>
@@ -52,18 +53,18 @@
 		</div>
 
 		<div class="text resume">
-			My resume is available at <a href="http://robtulloch.com">RobTulloch.com</a> <!-- Please hire me -->
+			My resume is available at <a rel="me" href="http://robtulloch.com">RobTulloch.com</a> <!-- Please hire me -->
 		</div>
 
 		<div class="box plan">
 			<h2> My .Plan file </h2>
-			<object data=".plan"
-				type='application/txt'>
+			<object data=".plan.html"
+				type='application/html'>
 			<!--	iframe html (fall back case) -->
-				<iframe src=".plan"
+				<iframe src=".plan.html"
 						style="border: none;">
 			<!-- embed html (last chance) -->
-						<embed src=".plan" type='application/txt'></embed>
+						<embed src=".plan.html" type='application/html'></embed>
 				</iframe>
 			</object>
 		</div>
@@ -75,11 +76,12 @@
 			<li><a href="http://test.syrrys.com/">Testing?</a></li>
 			<li><a href="http://intelligentdecline.com/">Intelligent Decline blog</a>
 			<li><a href="http://blog.syrrys.com" rel="me">My Wordpress Blog (This could use some attention)</a>
-			<li><a href="http://exceptionallyclassy.com/">Exceptionally Classy (Clothing... soon)</a>
-			<li><a href="http://integral-designs.net/">Integral Designs (uses flash... aparently)</a>
+			<li><a href="http://exceptionallyclassy.com/">Exceptionally Classy (Denim &amp; Fragrance Sales)</a>
+			<li><a href="http://integral-designs.net/">Integral Designs - Smart Home Automation and consulting &amp; Family Online Security Planning/Auditing</a>
 
 			</ul>
 		</div>
+	</div>
 
 		<foot>
 			<a href="http://gmpg.org/xfn">  <img src="xfn-btn.gif" alt="XFN Friendly" /> </a>
